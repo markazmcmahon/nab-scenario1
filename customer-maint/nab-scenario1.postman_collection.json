@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "17bf1472-650c-497b-96d5-64ecf1bd6923",
+		"name": "nab-scenario1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/list",
+			"request": {
+				"method": null,
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"list"
+					]
+				},
+				"description": "List all customers"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"John\", \"middleName\":\"Jack\", \"surname\":\"Smith\", \"initials\":\"JJ\", \"title\":\"Mr\", \"streetLine1\":\"100\", \"streetName\":\"Alfred\", \"suburb\":\"Kew\", \"city\":\"Melbourne\", \"state\":\"Vic\", \"country\":\"Australia\", \"pinCode\":\"3101\", \"sex\":\"M\", \"maritalStatus\":\"U\", \n\t\"creditRating\":99, \"isNabCustomer\":\"true\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Create a customer\t"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"John\", \"middleName\":\"Jack\", \"surname\":\"Smith\", \"initials\":\"JJ\", \"title\":\"Mr\", \"streetLine1\":\"100\", \"streetName\":\"Alfred\", \"suburb\":\"Kew\", \"city\":\"Melbourne\", \"state\":\"Vic\", \"country\":\"Australia\", \"pinCode\":\"3101\", \"sex\":\"M\", \"maritalStatus\":\"U\", \n\t\"creditRating\":99, \"isNabCustomer\":\"true\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				},
+				"description": "Update a customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1, \"firstName\":\"Johnny\", \"middleName\":\"Jacko\", \"surname\":\"Smith\", \"initials\":\"JJ\", \"title\":\"Mr\", \"streetLine1\":\"100\", \"streetName\":\"Alfred\", \"suburb\":\"Kew\", \"city\":\"Melbourne\", \"state\":\"Vic\", \"country\":\"Australia\", \"pinCode\":\"3101\", \"sex\":\"M\", \"maritalStatus\":\"U\", \n\t\"creditRating\":99, \"isNabCustomer\":\"true\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Update a customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"John\", \"middleName\":\"Jack\", \"surname\":\"Smith\", \"initials\":\"JJ\", \"title\":\"Mr\", \"streetLine1\":\"100\", \"streetName\":\"Alfred\", \"suburb\":\"Kew\", \"city\":\"Melbourne\", \"state\":\"Vic\", \"country\":\"Australia\", \"pinCode\":\"3101\", \"sex\":\"M\", \"maritalStatus\":\"U\", \n\t\"creditRating\":99, \"isNabCustomer\":\"true\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Delete a customer"
+			},
+			"response": []
+		}
+	]
+}
